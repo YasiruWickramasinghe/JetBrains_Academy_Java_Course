@@ -1,0 +1,33 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    // update the class
+    class UncheckedException extends ...{
+
+    }
+
+    //do not change the code
+    class Main {
+        public static void main(String[] args) {
+            UncheckedException uncheckedException = new UncheckedException();
+            System.out.println(uncheckedException instanceof RuntimeException);
+        }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/16172#comment
+status: Failed
+feedback:
+  message: |
+    Compilation error
+    Main.java:8: error: no suitable constructor found for UncheckedIOException(no arguments)
+            super();
+            ^
+        constructor UncheckedIOException.UncheckedIOException(String,IOException) is not applicable
+          (actual and formal argument lists differ in length)
+        constructor UncheckedIOException.UncheckedIOException(IOException) is not applicable
+          (actual and formal argument lists differ in length)
+    1 error
+  time: "Thu, 12 Jan 2023 12:24:37 UTC"
+record: -1
